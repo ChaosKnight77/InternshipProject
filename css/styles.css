@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: "Montserrat";
+}
+#title {
+  background-color: #16425b;
+  color: white;
+}
+.container-fluid {
+  padding: 3% 15% 10%;
+}
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+.home-button {
+  border-radius: 10px;
+}
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.top-heading {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.first-image {
+  text-align: center;
+  box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+.title-text {
+  margin-top: 60px;
+}
+.title-heading {
+  text-align: center;
+}
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+.btn-dark:hover {
+  background-color: #000000;
+}
+/* Phone-Image */
+.iphone-image {
+  position: relative;
+}
+.phone {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .phone {
+    position: static;
+    transform: rotate(0);
+  }
+}
+/* Features Section */
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+}
+.imagio-intro {
+
+}
+.cool-card {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #16425b;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container .card {
+  position: relative;
+  width: 480px;
+  height: 600px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container .card .content .card-main-text {
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+.container .card .content .card-text {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+.container .card .content .card-para {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.container .card .content .card-link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.icon {
+  color: #16425b;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #2f6690;
+}
+.feature-text {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.feature-subtext {
+  color: #8f8f8f;
+  font-weight: 600;
+}
+.feature-box {
+  text-align: center;
+  padding: 2%;
+}
+#subscriptions {
+  text-align: center;
+  background-color: #2f6690;
+  color: #fff;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+h2 {
+  font-family: "Montserrat";
+  font-size: 2.75rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+#press {
+  background-color: #fff;
+  padding: 7% 15%;
+}
+.press-heading {
+  margin-left: auto;
+  font-weight: bold;
+}
+.accordion-text {
+  text-align: center;
+}
+.accordion-body {
+  text-align: center;
+}
+.checkout {
+  background-color: #16425b;
+}
+.checkout-button {
+  margin-top: 10px;
+}
+/* Call to Action Section */
+#cta {
+  background-color: #16425b;
+  text-align: center;
+  padding: 6% 18%;
+  color: #fff;
+}
+.links-list {
+  text-align: left;
+}
+.final {
+  color: #d9dcd6;
+}
+.final:hover {
+  color: #8f8f8f;
+}
+.branches {
+  text-align: left;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-form {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.AVES-link {
+  color: #fff;
+  margin-left: 5px;
+}
+.AVES-info {
+  margin-left: 10px;
+}
+/* Footer Section */
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 6%;
+}
+.fa-twitter {
+  margin: 10px;
+}
+.fa-facebook-f {
+  margin: 10px;
+}
+.fa-instagram {
+  margin: 10px;
+}
+.fa-youtube {
+  margin: 10px;
+}
+.fa-linkedin {
+  margin: 10px;
+}
+.copyright-line {
+  color: #8f8f8f;
+  margin-top: 1%;
+}
